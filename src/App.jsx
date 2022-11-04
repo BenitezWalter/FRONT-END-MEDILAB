@@ -1,5 +1,5 @@
 
-import MainHistoriaClinica from './components/MainHistoriaClinica'
+import MainHistoriaClinica from '../pages/MainHistoriaClinica'
 
 function App() {
   return (

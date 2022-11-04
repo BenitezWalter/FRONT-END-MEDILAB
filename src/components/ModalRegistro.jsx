@@ -61,16 +61,16 @@ function ModalRegistro() {
                         <input type="radio" value="Administrador" name='Categoria' onClick={()=>{setHiddenAdmin(false);if(hiddenMedic==false){setHiddenMedic(true)}}}/>Administrador
                     </div>
 
-                    <label for="formGroupExampleInput" class="form-label mt-2" hidden={hiddenMedic} id="MatriLabel"><strong>Ingrese su Matricula</strong></label>
-                    <div class="form-group mt-2 input-group flex-nowrap" id="MatriDiv" hidden={hiddenMedic}>
+                    <label htmlFor="Enrollment" class="form-label mt-2" hidden={hiddenMedic} id="MatriLabel"><strong>Ingrese su Matricula</strong></label>
+                    <div class="form-group mt-2 input-group flex-nowrap" hidden={hiddenMedic}>
                         <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fillRule="evenodd" d="M6.75 0A1.75 1.75 0 005 1.75V3H1.75A1.75 1.75 0 000 4.75v8.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H11V1.75A1.75 1.75 0 009.25 0h-2.5zM9.5 3V1.75a.25.25 0 00-.25-.25h-2.5a.25.25 0 00-.25.25V3h3zM5 4.5H1.75a.25.25 0 00-.25.25V6a2 2 0 002 2h9a2 2 0 002-2V4.75a.25.25 0 00-.25-.25H5zm-1.5 5a3.484 3.484 0 01-2-.627v4.377c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V8.873a3.484 3.484 0 01-2 .627h-9z"></path></svg></span>
-                        <input type="text" class="form-control" name="" id="Matricula" required/>
+                        <input type="text" class="form-control" name=""  required/>
                     </div>
 
-                    <label for="formGroupExampleInput" class="form-label mt-2" hidden={hiddenAdmin} id="MatriLabel"><strong>Ingrese su Codigo de administrador</strong></label>
-                    <div class="form-group mt-2 input-group flex-nowrap" id="MatriDiv" hidden={hiddenAdmin}>
+                    <label htmlFor="adminCode" class="form-label mt-2" hidden={hiddenAdmin} id="MatriLabel"><strong>Ingrese su Codigo de administrador</strong></label>
+                    <div class="form-group mt-2 input-group flex-nowrap" hidden={hiddenAdmin}>
                     <span class="input-group-text" id="addon-wrapping"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fillRule="evenodd" d="M6.5 5.5a4 4 0 112.731 3.795.75.75 0 00-.768.18L7.44 10.5H6.25a.75.75 0 00-.75.75v1.19l-.06.06H4.25a.75.75 0 00-.75.75v1.19l-.06.06H1.75a.25.25 0 01-.25-.25v-1.69l5.024-5.023a.75.75 0 00.181-.768A3.995 3.995 0 016.5 5.5zm4-5.5a5.5 5.5 0 00-5.348 6.788L.22 11.72a.75.75 0 00-.22.53v2C0 15.216.784 16 1.75 16h2a.75.75 0 00.53-.22l.5-.5a.75.75 0 00.22-.53V14h.75a.75.75 0 00.53-.22l.5-.5a.75.75 0 00.22-.53V12h.75a.75.75 0 00.53-.22l.932-.932A5.5 5.5 0 1010.5 0zm.5 6a1 1 0 100-2 1 1 0 000 2z"></path></svg></span>
-                        <input type="text" class="form-control" name="" id="Matricula" required/>
+                        <input type="text" class="form-control" name="" required/>
                     </div>
                     
                 </div>
@@ -81,7 +81,7 @@ function ModalRegistro() {
                 Cerrar
             </Button>
           
-            <Button variant="primary" onClick={handleClose}>
+            <Button variant="primary">
                 Registrarse
             </Button>
         </Modal.Footer>

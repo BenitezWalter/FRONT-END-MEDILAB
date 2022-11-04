@@ -1,4 +1,4 @@
-import ModalRegistro from "../ModalRegistro"
+import ModalRegistro from "../components/ModalRegistro"
 
 const Header = ()=>{
     return(
