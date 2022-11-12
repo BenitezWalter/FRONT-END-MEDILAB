@@ -1,10 +1,10 @@
 
-import MainHistoriaClinica from '../pages/MainHistoriaClinica'
+import UserProfile from '../pages/UserProfile'
 
 function App() {
   return (
 
-    <MainHistoriaClinica/>
+    <UserProfile/>
     
   )
 }
