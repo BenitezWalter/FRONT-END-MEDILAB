@@ -1,9 +1,10 @@
+import ModalInicioSesion from "../ModalInicioSesion"
 import ModalRegistro from "../ModalRegistro"
 
 const Header = ()=>{
     return(
     <header className="fixed-top">
-        <div className="container d-flex align-items-center">
+        <div className="container d-flex align-items-center" style={{"background-color" : "rgb(255, 255, 255)"}}>
     
           <h1 className="logo me-auto"><a href="index.html">Medilab</a></h1>
     
@@ -18,9 +19,7 @@ const Header = ()=>{
                 <ModalRegistro/>
               </li>
               <li>
-                <a type="button" className="nav-link scrollto" data-bs-toggle="modal" data-bs-target="#modalInicio">
-                Iniciar Sesión
-                </a>
+                <ModalInicioSesion/> 
               </li>
     
             </ul>

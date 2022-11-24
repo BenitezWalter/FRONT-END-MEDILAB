@@ -39,3 +39,21 @@
 .read-the-docs {
   color: #888;
 }
+
+#regButton {
+  background-color:#f1f7fd;
+  color:rgb(77, 127, 221)
+}
+
+.regButton {
+  background-color:#f1f7fd;
+  color:rgb(77, 127, 221)
+}
+
+#sectionComent {
+  background-color: rgb(188, 208, 253);
+}
+
+.sectionComent {
+  background-color: rgb(188, 208, 253);
+}
