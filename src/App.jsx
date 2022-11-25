@@ -5,7 +5,7 @@ import { authReducer } from './reducers/authReducers';
 
 function App() {
   const infoContextUser = {
-    isLogged : true,
+    isLogged : false,
     userName : "PepeGuapo"
   }
   const initialRoleXD = {
@@ -14,10 +14,13 @@ function App() {
   }
   const [roleXD, dispatch] = useReducer(authReducer, initialRoleXD);
 
+  const [logged, dispatchLogged] = useReducer(authReducer, infoContextUser);
+
   return (
     <AuthContext.Provider value ={{
       infoContextUser,
-      roleXD, dispatch
+      roleXD, dispatch,
+      logged, dispatchLogged
     }}>
       <AppRouter/>
     </AuthContext.Provider>
